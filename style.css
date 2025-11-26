@@ -3,10 +3,12 @@
     --card-bg: #161616;
     --text-primary: #ffffff;
     --text-secondary: #a0a0a0;
-    --accent-color: #6366f1; /* Indigo */
+    --accent-color: #6366f1;
+    /* Indigo */
     --accent-hover: #4f46e5;
     --gradient-start: #6366f1;
-    --gradient-end: #a855f7; /* Purple */
+    --gradient-end: #a855f7;
+    /* Purple */
     --font-heading: 'Outfit', sans-serif;
     --font-body: 'Inter', sans-serif;
     --transition: all 0.3s ease;
@@ -47,14 +49,18 @@ ul {
 }
 
 /* Typography */
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: var(--font-heading);
     font-weight: 700;
 }
 
 .section-title {
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
+    font-size: 2rem;
+    /* Reduced from 2.5rem */
+    margin-bottom: 2rem;
+    /* Reduced from 3rem */
     text-align: center;
     background: linear-gradient(to right, var(--text-primary), var(--text-secondary));
     -webkit-background-clip: text;
@@ -68,7 +74,8 @@ h1, h2, h3 {
 }
 
 /* Buttons */
-.btn-primary, .btn-secondary {
+.btn-primary,
+.btn-secondary {
     display: inline-block;
     padding: 0.8rem 2rem;
     border-radius: 50px;
@@ -139,7 +146,8 @@ h1, h2, h3 {
     font-weight: 500;
 }
 
-.nav-links a:hover, .nav-links a.active {
+.nav-links a:hover,
+.nav-links a.active {
     color: var(--text-primary);
 }
 
@@ -164,12 +172,15 @@ h1, h2, h3 {
 
 /* Hero Section */
 .hero {
-    height: 100vh;
+    min-height: 80vh;
+    /* Reduced from 100vh to reduce massive initial space if content is short */
     display: flex;
     align-items: center;
     position: relative;
     overflow: hidden;
-    padding-top: 80px;
+    padding-top: 60px;
+    /* Reduced from 80px */
+    padding-bottom: 2rem;
 }
 
 .hero-content {
@@ -179,15 +190,19 @@ h1, h2, h3 {
 }
 
 .hero-title {
-    font-size: 4.5rem;
+    font-size: 4rem;
+    /* Slightly smaller to save space */
     line-height: 1.1;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
+    /* Reduced from 1.5rem */
 }
 
 .hero-subtitle {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    /* Slightly smaller */
     color: var(--text-secondary);
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
+    /* Reduced from 2.5rem */
     max-width: 600px;
 }
 
@@ -198,13 +213,14 @@ h1, h2, h3 {
     width: 100%;
     height: 100%;
     background: radial-gradient(circle at 80% 20%, rgba(99, 102, 241, 0.15) 0%, transparent 50%),
-                radial-gradient(circle at 20% 80%, rgba(168, 85, 247, 0.15) 0%, transparent 50%);
+        radial-gradient(circle at 20% 80%, rgba(168, 85, 247, 0.15) 0%, transparent 50%);
     z-index: 1;
 }
 
 /* Sections */
 .section {
-    padding: 6rem 0;
+    padding: 3rem 0;
+    /* Reduced from 6rem 0 */
 }
 
 /* About Section */
@@ -217,7 +233,8 @@ h1, h2, h3 {
 }
 
 .about-text p {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
+    /* Reduced from 1.5rem */
 }
 
 /* Projects Section */
@@ -386,7 +403,7 @@ h1, h2, h3 {
     .hero-title {
         font-size: 3rem;
     }
-    
+
     .nav-links {
         position: fixed;
         right: -100%;
@@ -399,23 +416,23 @@ h1, h2, h3 {
         transition: 0.3s;
         border-bottom: 1px solid rgba(255, 255, 255, 0.05);
     }
-    
+
     .nav-links.active {
         right: 0;
     }
-    
+
     .hamburger {
         display: block;
     }
-    
+
     .hamburger.active .bar:nth-child(2) {
         opacity: 0;
     }
-    
+
     .hamburger.active .bar:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
     }
-    
+
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
