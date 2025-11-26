@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
-            
+
             // Close mobile menu if open
             if (navLinks.classList.contains('active')) {
                 navLinks.classList.remove('active');
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const targetId = this.getAttribute('href');
             if (targetId === '#') return;
-            
+
             const targetElement = document.querySelector(targetId);
             if (targetElement) {
                 targetElement.scrollIntoView({
@@ -66,4 +66,45 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     `;
     document.head.appendChild(style);
+    // Typewriter Effect
+    const textElement = document.getElementById('typing-text');
+    const phrases = [
+        "Software Engineer",
+        "Chrome Extension Developer",
+        "Web Developer"
+    ];
+    let phraseIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    let typeSpeed = 100;
+
+    function type() {
+        const currentPhrase = phrases[phraseIndex];
+
+        if (isDeleting) {
+            textElement.textContent = currentPhrase.substring(0, charIndex - 1);
+            charIndex--;
+            typeSpeed = 50;
+        } else {
+            textElement.textContent = currentPhrase.substring(0, charIndex + 1);
+            charIndex++;
+            typeSpeed = 100;
+        }
+
+        if (!isDeleting && charIndex === currentPhrase.length) {
+            isDeleting = true;
+            typeSpeed = 2000; // Pause at end
+        } else if (isDeleting && charIndex === 0) {
+            isDeleting = false;
+            phraseIndex = (phraseIndex + 1) % phrases.length;
+            typeSpeed = 500; // Pause before new phrase
+        }
+
+        setTimeout(type, typeSpeed);
+    }
+
+    // Start typing if element exists
+    if (textElement) {
+        type();
+    }
 });
