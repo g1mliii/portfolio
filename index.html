@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Engineer Portfolio</title>
+    <meta name="description"
+        content="Portfolio of a Software Engineer specializing in Chrome Extensions and Web Development.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Outfit:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Portfolio.</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact" class="btn-primary">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero" id="home">
+        <div class="container hero-content">
+            <h1 class="hero-title">Building Digital <span class="gradient-text">Experiences</span></h1>
+            <p class="hero-subtitle">Software Engineer | Chrome Extension Developer | Web Developer</p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn-primary">View Work</a>
+                <a href="#contact" class="btn-secondary">Get in Touch</a>
+            </div>
+        </div>
+        <div class="hero-background"></div>
+    </header>
+
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I am a passionate Software Engineer with a focus on building functional and user-friendly web
+                        applications and browser extensions.
+                        I love turning ideas into reality through code. My journey involves deep diving into JavaScript,
+                        exploring the nuances of the Chrome Extension API,
+                        and crafting responsive web interfaces.
+                    </p>
+                    <p>
+                        I am constantly learning and evolving, looking for opportunities to apply my skills to solve
+                        real-world problems.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1: Anchored -->
+                <article class="project-card featured">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">Anchored (URL-Notes)</h3>
+                            <span class="badge">Chrome Extension + Web</span>
+                        </div>
+                        <p class="project-description">
+                            A powerful note-taking extension for the web that allows users to annotate any webpage.
+                            <strong>Over 1,000 active users</strong> rely on Anchored for their research.
+                            Features a companion website for managing notes, powered by a secure
+                            <strong>Supabase</strong> backend.
+                        </p>
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>Chrome API</span>
+                            <span>Supabase</span>
+                            <span>HTML/CSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://anchored.site/" target="_blank" class="link-btn"><i
+                                    class="fas fa-external-link-alt"></i> Website</a>
+                            <a href="https://chromewebstore.google.com/detail/anchored-%E2%80%93-notes-highligh/llkmfidpbpfgdgjlohgpomdjckcfkllg"
+                                target="_blank" class="link-btn"><i class="fab fa-chrome"></i> Store (1k+ Users)</a>
+                            <a href="https://github.com/g1mliii/URL-Notes" target="_blank" class="link-btn"><i
+                                    class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2: Image Match -->
+                <article class="project-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">Image Match</h3>
+                            <span class="badge">Web App</span>
+                        </div>
+                        <p class="project-description">
+                            Intelligent inventory matching application.
+                        </p>
+                        <div class="project-tech">
+                            <span>Web Tech</span>
+                            <span>Supabase</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://g1mliii.github.io/image-match/" target="_blank" class="link-btn"><i
+                                    class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="https://github.com/g1mliii/image-match" target="_blank" class="link-btn"><i
+                                    class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3: CrossTechConnect -->
+                <article class="project-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">CrossTechConnect</h3>
+                            <span class="badge">GitHub Project</span>
+                        </div>
+                        <p class="project-description">
+                            A collaborative technology project.
+                        </p>
+                        <div class="project-tech">
+                            <span>Open Source</span>
+                            <span>Supabase</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/g1mliii/CrossTechConnect" target="_blank" class="link-btn"><i
+                                    class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 4: extension- -->
+                <article class="project-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">extension-</h3>
+                            <span class="badge">GitHub Project</span>
+                        </div>
+                        <p class="project-description">
+                            Browser extension development project.
+                        </p>
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/g1mliii/extension-" target="_blank" class="link-btn"><i
+                                    class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 5: url-rater-confir -->
+                <article class="project-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">URL Rater Confirmation</h3>
+                            <span class="badge">Web Page</span>
+                        </div>
+                        <p class="project-description">
+                            Confirmation page for the URL Rater extension.
+                        </p>
+                        <div class="project-tech">
+                            <span>HTML/CSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/g1mliii/url-rater-confir" target="_blank" class="link-btn"><i
+                                    class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item"><i class="fab fa-js"></i> JavaScript</div>
+                <div class="skill-item"><i class="fab fa-html5"></i> HTML5</div>
+                <div class="skill-item"><i class="fab fa-css3-alt"></i> CSS3</div>
+                <div class="skill-item"><i class="fab fa-chrome"></i> Chrome Extensions</div>
+                <div class="skill-item"><i class="fas fa-database"></i> Supabase</div>
+                <div class="skill-item"><i class="fab fa-git-alt"></i> Git & GitHub</div>
+                <div class="skill-item"><i class="fas fa-code"></i> Web Development</div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="footer">
+        <div class="container footer-content">
+            <h2 class="footer-title">Let's Work Together</h2>
+            <p>Interested in my work? Feel free to reach out.</p>
+            <div class="social-links">
+                <a href="https://github.com/g1mliii" target="_blank" aria-label="GitHub"><i
+                        class="fab fa-github"></i></a>
+                <a href="mailto:your.email@example.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                <!-- Add LinkedIn if available -->
+            </div>
+            <p class="copyright">&copy; <span id="year"></span>. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
