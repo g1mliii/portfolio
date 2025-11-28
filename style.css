@@ -9,7 +9,7 @@
 
 body {
     font-family: 'Courier New', monospace;
-    background: #fafaf8;
+    background: #f6ede4;
     color: #000;
     line-height: 1.5;
 }
@@ -97,7 +97,7 @@ header {
 .btn {
     padding: 12px 24px;
     border: 3px solid #000;
-    background: #fff;
+    background: #f6ede4;
     color: #000;
     font-family: 'Courier New', monospace;
     font-size: 14px;
@@ -106,6 +106,7 @@ header {
     text-transform: uppercase;
     text-decoration: none;
     display: inline-block;
+    transition: all 0.2s ease;
 }
 
 .btn:hover {
@@ -114,18 +115,24 @@ header {
 }
 
 .btn-primary {
+    background: #f6ede4;
+    color: #000;
+}
+
+.btn-primary:hover {
     background: #000;
     color: #fff;
 }
 
-.btn-primary:hover {
-    background: #fff;
+
+.btn-secondary {
+    background: #f6ede4;
     color: #000;
 }
 
-.btn-secondary {
-    background: #fff;
-    color: #000;
+.btn-secondary:hover {
+    background: #000;
+    color: #fff;
 }
 
 /* SECTIONS */
@@ -231,6 +238,13 @@ header {
     padding: 5px 10px;
     font-size: 12px;
     font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.project-tech span:hover {
+    background: #000;
+    color: #fff;
 }
 
 .project-links {
@@ -322,30 +336,18 @@ header {
 
 .copyright {
     font-size: 14px;
-    margin-top: 20px;
+    margin-top: 10px;
+    font-weight: bold;
 }
 
-/* RESPONSIVE */
-@media (max-width: 768px) {
-    .header-content {
-        flex-direction: column;
-    }
+/* SCROLL ANIMATIONS */
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.5s ease;
+}
 
-    .hero-title {
-        font-size: 36px;
-    }
-
-    .hero-subtitle {
-        font-size: 16px;
-    }
-
-    .section-header h2 {
-        font-size: 24px;
-    }
-
-    .project-header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-    }
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
 }

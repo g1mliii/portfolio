@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUBAIG SURI - RESUME</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @media print {
+            body {
+                background: #f6ede4 !important;
+            }
+        }
+
+        body {
+            font-family: 'Courier New', monospace;
+            background: #f6ede4;
+            color: #000;
+            line-height: 1.5;
+            padding: 40px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .header {
+            border: 4px solid #000;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 48px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            font-size: 13px;
+        }
+
+        .contact-info span {
+            white-space: nowrap;
+        }
+
+        .contact-info a {
+            color: #000;
+            text-decoration: none;
+            border-bottom: 2px solid #000;
+        }
+
+        .section {
+            border: 4px solid #000;
+            padding: 25px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-bottom: 3px solid #000;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+
+        .job,
+        .project,
+        .education-item {
+            margin-bottom: 20px;
+        }
+
+        .job-header,
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+            flex-wrap: wrap;
+        }
+
+        .job-title,
+        .project-title {
+            font-weight: bold;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+
+        .company,
+        .date {
+            font-size: 13px;
+        }
+
+        .company {
+            margin-bottom: 8px;
+        }
+
+        .tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .tech-tag {
+            border: 2px solid #000;
+            padding: 4px 8px;
+            font-size: 11px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-top: 8px;
+        }
+
+        li {
+            margin-bottom: 5px;
+            font-size: 13px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 8px;
+        }
+
+        .skill-item {
+            border: 2px solid #000;
+            padding: 8px 12px;
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .print-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 12px 24px;
+            border: 3px solid #000;
+            background: #f6ede4;
+            color: #000;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+
+        .print-button:hover {
+            background: #000;
+            color: #fff;
+        }
+
+        @media print {
+            .print-button {
+                display: none;
+            }
+
+            body {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <button class="print-button" onclick="window.print()">SAVE AS PDF</button>
+
+    <div class="header">
+        <h1>SUBAIG SURI</h1>
+        <p class="subtitle">SOFTWARE ENGINEER</p>
+        <div class="contact-info">
+            <span>📧 subaigsuri1@gmail.com</span>
+            <span>|</span>
+            <span>📱 647-825-9289</span>
+            <span>|</span>
+            <span>📍 TORONTO, ON</span>
+            <span>|</span>
+            <a href="https://github.com/g1mliii" target="_blank">GITHUB</a>
+            <span>|</span>
+            <a href="https://linkedin.com/in/subaig" target="_blank">LINKEDIN</a>
+            <span>|</span>
+            <a href="https://g1mliii.github.io/portfolio" target="_blank">PORTFOLIO</a>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>// SUMMARY</h2>
+        <p>SOFTWARE ENGINEER WHO BUILDS TOOLS THAT SOLVE REAL PROBLEMS. PROVEN TRACK RECORD WITH 1,000+ ACTIVE USERS ON
+            PRODUCTION APPLICATIONS. EXPERTISE IN BROWSER EXTENSIONS, FULL-STACK WEB DEVELOPMENT, AI/ML INTEGRATION, AND
+            CROSS-PLATFORM APPLICATIONS. PASSIONATE ABOUT CREATING INTUITIVE USER EXPERIENCES AND SHIPPING FAST.</p>
+    </div>
+
+    <div class="section">
+        <h2>// EXPERIENCE</h2>
+
+        <div class="job">
+            <div class="job-header">
+                <span class="job-title">FULL STACK DEVELOPER</span>
+                <span class="date">FEB 2021 - DEC 2024</span>
+            </div>
+            <div class="company">HYPE YUTE (E-COMMERCE RETAILER) | TORONTO, CANADA</div>
+            <ul>
+                <li>Developed AI-enhanced product recommendation features by integrating Large Language Models (LLMs) to
+                    personalize shopping experiences and increase conversion rates</li>
+                <li>Integrated third-party apps and tools to enhance product filtering, reviews, and customer engagement
+                </li>
+                <li>Enhanced payment gateway efficiency by developing secure transaction protocols with Node.js and
+                    Express.js, reducing processing delays by 15%</li>
+                <li>Developed and deployed RESTful APIs integrated with AI-powered search and recommendation features,
+                    improving data retrieval efficiency by 30%</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <span class="job-title">DATA ANALYST - SCIENTIFIC RESEARCH</span>
+                <span class="date">JAN 2022 - SEP 2022</span>
+            </div>
+            <div class="company">UNIVERSITY OF TORONTO | TORONTO, ON</div>
+            <ul>
+                <li>Conducted advanced research on the tracking and analysis of astronomical objects, contributing to a
+                    deeper understanding of celestial mechanics</li>
+                <li>Engineered object detection algorithms with Python, streamlining data operations through enhanced
+                    code efficiency</li>
+                <li>Automated repetitive data processing workflows using custom scripts, reducing analysis time by 30%
+                    and enabling more robust insights</li>
+                <li>Applied SQL and Python frameworks to process astronomical datasets, implementing machine learning
+                    and AI models for pattern recognition and anomaly detection</li>
+                <li>Applied Natural Language Processing (NLP) techniques to analyze and classify astronomical research
+                    data, improving categorization accuracy by 18%</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <span class="job-title">REAL-TIME SIMULATION DEVELOPER</span>
+                <span class="date">JAN 2021 - MAR 2022</span>
+            </div>
+            <div class="company">PRODIGY (INTERACTIVE MEDIA PLATFORM) | REMOTE</div>
+            <ul>
+                <li>Developed and refined mathematical models and simulations to optimize virtual economies, enhancing
+                    player satisfaction and retention</li>
+                <li>Conducted A/B testing and statistical analysis to evaluate the effects of economic adjustments,
+                    leading to a 15% increase in user engagement</li>
+                <li>Deployed Python and AI models to analyze player behavior and dynamically optimize in-game systems
+                </li>
+                <li>Engineered core gameplay mechanics utilizing Unity and C#, enhancing interactive experiences, which
+                    directly contributed to a 20% increase in user retention over six months</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <span class="job-title">IT CONSULTANT / SYSTEMS INTEGRATION</span>
+                <span class="date">MAR 2019 - PRESENT</span>
+            </div>
+            <div class="company">TECH TAILOR SOL | REMOTE</div>
+            <ul>
+                <li>Delivered customized computer system solutions for clients by leveraging deep expertise in hardware
+                    assembly, software troubleshooting, and performance optimization</li>
+                <li>Designed and tested systems using advanced tools and methodologies, ensuring compliance with client
+                    specifications and performance benchmarks</li>
+                <li>Diagnosed and resolved complex hardware and software issues, reducing downtime by an average of 40%
+                </li>
+                <li>Integrated IT systems with AI-based monitoring tools, using VMware and Jenkins to boost
+                    interoperability and achieve a 30% increase in operational efficiency</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>// PROJECTS</h2>
+
+        <div class="project">
+            <div class="project-header">
+                <span class="project-title">ANCHORED (URL-NOTES)</span>
+                <span class="date">1,000+ ACTIVE USERS</span>
+            </div>
+            <ul>
+                <li>Implemented a web-based companion platform to extend browser extension functionalities using
+                    JavaScript, React, and cloud technologies, enabling real-time note synchronization and user account
+                    management</li>
+                <li>Optimized backend scalability by leveraging Supabase and serverless cloud functions, reducing server
+                    costs by 30% while supporting concurrent device connections</li>
+                <li>Designed and deployed authentication workflows utilizing JavaScript and Node.js, ensuring secure
+                    access protocol implementation</li>
+                <li>Engineered a scalable, cloud-native backend that achieved 99.9% uptime and robust data integrity
+                    across multiple platforms</li>
+            </ul>
+            <div class="tech-tags">
+                <span class="tech-tag">JAVASCRIPT</span>
+                <span class="tech-tag">REACT</span>
+                <span class="tech-tag">NODE.JS</span>
+                <span class="tech-tag">SUPABASE</span>
+                <span class="tech-tag">CHROME API</span>
+                <span class="tech-tag">PWA</span>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-header">
+                <span class="project-title">IMAGE MATCH (CATALOGMATCH)</span>
+            </div>
+            <p>Visual product comparison tool for inventory management using OpenCV and NumPy for advanced image
+                analysis (color, shape, texture). Features batch processing, CSV import/export, and local SQLite
+                database with a freemium business model.</p>
+            <div class="tech-tags">
+                <span class="tech-tag">PYTHON</span>
+                <span class="tech-tag">FLASK</span>
+                <span class="tech-tag">OPENCV</span>
+                <span class="tech-tag">NUMPY</span>
+                <span class="tech-tag">SQLITE</span>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-header">
+                <span class="project-title">GHOSTCOPY</span>
+            </div>
+            <p>Cross-platform clipboard synchronization tool for Windows, macOS, iOS, and Android with real-time sync
+                via Supabase Realtime. Features game mode, smart transformers for JSON/JWT, global hotkeys, and zero-CPU
+                sleep mode.</p>
+            <div class="tech-tags">
+                <span class="tech-tag">FLUTTER</span>
+                <span class="tech-tag">DART</span>
+                <span class="tech-tag">SUPABASE</span>
+                <span class="tech-tag">POSTGRESQL</span>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-header">
+                <span class="project-title">CROSSTECHCONNECT</span>
+            </div>
+            <p>Device compatibility platform with AI-assisted data population. Full-stack application featuring Next.js
+                14 frontend, Node.js/Fastify backend, PostgreSQL database, and Python microservices for AI processing
+                using Ollama/OpenAI.</p>
+            <div class="tech-tags">
+                <span class="tech-tag">NEXT.JS</span>
+                <span class="tech-tag">TYPESCRIPT</span>
+                <span class="tech-tag">NODE.JS</span>
+                <span class="tech-tag">POSTGRESQL</span>
+                <span class="tech-tag">PYTHON</span>
+                <span class="tech-tag">AI/ML</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>// TECHNICAL SKILLS</h2>
+        <div class="skills-grid">
+            <div class="skill-item">PYTHON</div>
+            <div class="skill-item">JAVA</div>
+            <div class="skill-item">C</div>
+            <div class="skill-item">RUST</div>
+            <div class="skill-item">C#</div>
+            <div class="skill-item">SQL</div>
+            <div class="skill-item">JAVASCRIPT</div>
+            <div class="skill-item">TYPESCRIPT</div>
+            <div class="skill-item">DART</div>
+            <div class="skill-item">LIQUID</div>
+            <div class="skill-item">NODE.JS</div>
+            <div class="skill-item">REACT</div>
+            <div class="skill-item">NEXT.JS</div>
+            <div class="skill-item">EXPRESS.JS</div>
+            <div class="skill-item">FLUTTER</div>
+            <div class="skill-item">FLASK</div>
+            <div class="skill-item">UNITY</div>
+            <div class="skill-item">SUPABASE</div>
+            <div class="skill-item">POSTGRESQL</div>
+            <div class="skill-item">CHROME EXT</div>
+            <div class="skill-item">OPENCV</div>
+            <div class="skill-item">NUMPY</div>
+            <div class="skill-item">TENSORFLOW</div>
+            <div class="skill-item">SCIKIT-LEARN</div>
+            <div class="skill-item">HUGGING FACE</div>
+            <div class="skill-item">LLMS</div>
+            <div class="skill-item">NLP</div>
+            <div class="skill-item">POWER BI</div>
+            <div class="skill-item">VMWARE</div>
+            <div class="skill-item">JENKINS</div>
+            <div class="skill-item">GIT/GITHUB</div>
+            <div class="skill-item">REST APIs</div>
+            <div class="skill-item">PWA</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>// EDUCATION</h2>
+        <div class="education-item">
+            <div class="job-header">
+                <span class="job-title">BACHELOR OF SCIENCE (HBSc)</span>
+                <span class="date">GRADUATED JAN 2024</span>
+            </div>
+            <div class="company">UNIVERSITY OF TORONTO | TORONTO, ON</div>
+            <p>MINOR IN MATHEMATICS</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
