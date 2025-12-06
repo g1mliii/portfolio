@@ -14,6 +14,25 @@ body {
     line-height: 1.5;
 }
 
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f6ede4;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #000;
+    border: 3px solid #f6ede4;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #333;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
