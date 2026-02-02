@@ -1,28 +1,35 @@
-document.addEventListener('DOMContentLoaded', () => {
-    // Reveal animations on scroll using IntersectionObserver for better performance and memory management
-    const revealElements = document.querySelectorAll('.section, .project-card, .skills-category');
+// Custom smooth scroll for slower/smoother effect
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+            const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+            const startPosition = window.scrollY;
+            const distance = targetPosition - startPosition;
+            const duration = 1200; // 1200ms for a slower, smoother glide
+            let start = null;
 
-    // Add reveal class to elements to prepare them
-    revealElements.forEach(element => {
-        element.classList.add('reveal');
-    });
+            function step(timestamp) {
+                if (!start) start = timestamp;
+                const progress = timestamp - start;
+                const percentage = Math.min(progress / duration, 1);
 
-    // Use IntersectionObserver to handle visibility changes efficiently
-    // This avoids the overhead of running a function on every single scroll event (memory/CPU protection)
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('active');
-                // Optional: Stop observing once revealed to free up resources
-                // observer.unobserve(entry.target); 
+                // Ease-in-out cubic function
+                const ease = percentage < 0.5 ? 4 * percentage * percentage * percentage : 1 - Math.pow(-2 * percentage + 2, 3) / 2;
+
+                window.scrollTo(0, startPosition + distance * ease);
+
+                if (progress < duration) {
+                    window.requestAnimationFrame(step);
+                }
             }
-        });
-    }, {
-        threshold: 0.15, // Trigger when 15% of the element is visible
-        rootMargin: "0px 0px -50px 0px"
-    });
 
-    revealElements.forEach(element => {
-        observer.observe(element);
+            window.requestAnimationFrame(step);
+        }
     });
 });
+
+console.log("Portfolio loaded with custom smooth scroll");
