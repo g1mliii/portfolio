@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Security-Policy"
-        content="default-src 'self'; style-src 'self' https://cdnjs.cloudflare.com; font-src 'self' https://cdnjs.cloudflare.com; img-src 'self'; script-src 'self';">
+        content="default-src 'self'; style-src 'self' https://cdnjs.cloudflare.com; font-src 'self' https://cdnjs.cloudflare.com; img-src 'self'; script-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests;">
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <meta name="description"
@@ -17,8 +17,11 @@
     <meta property="og:description" content="Building digital experiences, Chrome extensions, and AI-powered tools.">
     <meta property="og:type" content="website">
     <title>SUBAIG SURI // SOFTWARE ENGINEER</title>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link rel="stylesheet" href="style.css?v=4">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 
 <body>
@@ -174,7 +177,32 @@
                     </div>
                 </article>
 
-                <!-- Project 5: CrossTechConnect -->
+                <!-- Project 5: PressPlay (compact-games) -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">PRESSPLAY (COMPACT-GAMES)</h3>
+                        <span class="badge">DESKTOP APP</span>
+                    </div>
+                    <p class="project-description">
+                        WINDOWS GAME STORAGE OPTIMIZER THAT AUTOMATICALLY COMPRESSES INSTALLED GAMES WHEN THE SYSTEM
+                        IS IDLE. BUILT WITH A FLUTTER FRONTEND AND RUST BACKEND USING FLUTTER_RUST_BRIDGE FOR
+                        TYPE-SAFE INTEROP. INCLUDES DIRECTSTORAGE SAFETY CHECKS, GAME PLATFORM DISCOVERY, AND
+                        REAL-TIME COMPRESSION METRICS.
+                    </p>
+                    <div class="project-tech">
+                        <span>FLUTTER</span>
+                        <span>RUST</span>
+                        <span>WINDOWS</span>
+                        <span>NTFS</span>
+                        <span>FLUTTER_RUST_BRIDGE</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/g1mliii/compact-games" target="_blank"
+                            rel="noopener noreferrer">CODE</a>
+                    </div>
+                </article>
+
+                <!-- Project 6: CrossTechConnect -->
                 <article class="project-card">
                     <div class="project-header">
                         <h3 class="project-title">CROSSTECHCONNECT</h3>
@@ -199,7 +227,7 @@
                     </div>
                 </article>
 
-                <!-- Project 6: URL Rating Extension -->
+                <!-- Project 7: URL Rating Extension -->
                 <article class="project-card">
                     <div class="project-header">
                         <h3 class="project-title">URL RATING EXTENSION</h3>
@@ -285,11 +313,12 @@
         <footer id="contact" class="footer">
             <h2>// CONTACT</h2>
             <div class="social-links">
-                <a href="mailto:subaigsuri1@gmail.com" title="EMAIL"><i class="fas fa-envelope"></i></a>
-                <a href="https://github.com/g1mliii" target="_blank" rel="noopener noreferrer" title="GITHUB"><i
-                        class="fab fa-github"></i></a>
+                <a href="mailto:subaigsuri1@gmail.com" title="EMAIL" aria-label="Email"><i
+                        class="fas fa-envelope"></i></a>
+                <a href="https://github.com/g1mliii" target="_blank" rel="noopener noreferrer" title="GITHUB"
+                    aria-label="GitHub"><i class="fab fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/subaig-s-a2189b2b3/" target="_blank" rel="noopener noreferrer"
-                    title="LINKEDIN"><i class="fab fa-linkedin"></i></a>
+                    title="LINKEDIN" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
             </div>
             <p class="copyright">&copy; 2025 SUBAIG SURI. ALL RIGHTS RESERVED.</p>
         </footer>

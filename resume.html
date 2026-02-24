@@ -5,14 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Security-Policy"
-        content="default-src 'self'; style-src 'self'; font-src 'self'; img-src 'self'; script-src 'self';">
+        content="default-src 'self'; style-src 'self'; font-src 'self'; img-src 'self'; script-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests;">
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
     <title>SUBAIG SURI - RESUME</title>
     <link rel="stylesheet" href="resume.css">
 </head>
 
 <body>
-    <button class="print-button">SAVE AS PDF</button>
+    <button class="print-button" type="button" aria-label="Save resume as PDF">SAVE AS PDF</button>
 
     <div class="header">
         <h1>SUBAIG SURI</h1>
@@ -192,6 +193,22 @@
                 <span class="tech-tag">GDSCRIPT</span>
                 <span class="tech-tag">OLLAMA</span>
                 <span class="tech-tag">AI/LLM</span>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-header">
+                <span class="project-title">PRESSPLAY (COMPACT-GAMES)</span>
+            </div>
+            <p>Windows game storage optimizer that automatically compresses installed games when the system is idle.
+                Built with Flutter UI + Rust backend through flutter_rust_bridge, with DirectStorage safety checks,
+                multi-launcher game discovery, and live compression statistics.</p>
+            <div class="tech-tags">
+                <span class="tech-tag">FLUTTER</span>
+                <span class="tech-tag">RUST</span>
+                <span class="tech-tag">WINDOWS</span>
+                <span class="tech-tag">NTFS</span>
+                <span class="tech-tag">FLUTTER_RUST_BRIDGE</span>
             </div>
         </div>
 
