@@ -1,0 +1,20 @@
+name: Supply Chain Guard
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+      - master
+  workflow_dispatch:
+
+jobs:
+  blocked-deps:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Scan for blocked dependency versions
+        shell: pwsh
+        run: ./scripts/check-blocked-deps.ps1
