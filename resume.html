@@ -17,7 +17,7 @@
 
     <div class="header">
         <h1>SUBAIG SURI</h1>
-        <p class="subtitle">SOFTWARE ENGINEER & MOBILE DEVELOPER</p>
+        <p class="subtitle">SOFTWARE ENGINEER // FULL-STACK SYSTEMS // CROSS-PLATFORM APPS</p>
         <div class="contact-info">
             <span>subaigsuri1@gmail.com</span>
             <span>|</span>
@@ -35,10 +35,9 @@
 
     <div class="section">
         <h2>// SUMMARY</h2>
-        <p>SOFTWARE ENGINEER WHO BUILDS TOOLS THAT SOLVE REAL PROBLEMS. PROVEN TRACK RECORD ON
-            PRODUCTION APPLICATIONS. EXPERTISE IN FULL-STACK SYSTEMS, RUST/FLUTTER CROSS-PLATFORM APPLICATIONS FOR MACOS,
-            WINDOWS, IOS, AND ANDROID, AI/ML INTEGRATION, AND
-            MOBILE-FIRST PRODUCT DEVELOPMENT. PASSIONATE ABOUT CREATING INTUITIVE USER EXPERIENCES AND SHIPPING FAST.</p>
+        <p>SOFTWARE ENGINEER AND AI SYSTEMS BUILDER WHO SHIPS PRODUCTION TOOLS PEOPLE USE. BUILDS FULL-STACK
+            SYSTEMS, QR-COMMERCE FLOWS, CROSS-PLATFORM FLUTTER/RUST APPS FOR WINDOWS, MACOS, IOS, AND ANDROID,
+            AND LLM-POWERED DEVELOPER TOOLS. CURRENT FOCUS INCLUDES APTBAZAAR, GHOSTCOPY, AND ANYDASH.</p>
     </div>
 
     <div class="section">
@@ -124,12 +123,38 @@
 
         <div class="project">
             <div class="project-header">
-                <span class="project-title">COMPACT GAMES</span>
-                <span class="date"> Windows desktop + web </span>
+                <span class="project-title">APTBAZAAR</span>
+                <span class="date">WEB APP</span>
             </div>
-            <p>Windows game storage optimizer that automatically compresses installed games when the system is idle.
-                Built with Flutter UI + Rust backend through flutter_rust_bridge, with DirectStorage safety checks,
-                multi-launcher game discovery, live compression statistics, and a published web companion landing page.</p>
+            <p>QR-storefront platform for local sellers. Home bakers, tutors, and campus creators can create checkout
+                pages, generate QR codes, and take orders with Stripe Connect Express split payments. Built on Next.js,
+                Supabase PostgreSQL with row level security, Cloudflare Pages, Vitest, Playwright, and Sentry.</p>
+            <div class="project-links">
+                <a href="https://github.com/g1mliii/aptbazaar" target="_blank" rel="noopener noreferrer">CODE</a>
+            </div>
+            <div class="tech-tags">
+                <span class="tech-tag">NEXT.JS</span>
+                <span class="tech-tag">TYPESCRIPT</span>
+                <span class="tech-tag">SUPABASE</span>
+                <span class="tech-tag">STRIPE CONNECT</span>
+                <span class="tech-tag">CLOUDFLARE</span>
+                <span class="tech-tag">PLAYWRIGHT</span>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-header">
+                <span class="project-title">COMPACT GAMES</span>
+                <span class="date">DESKTOP APP + WEB</span>
+            </div>
+            <p>Windows game storage optimizer with 13 releases shipped. Reclaims disk space from large game libraries
+                using NTFS compression without deleting files. Flutter frontend and Rust backend via flutter_rust_bridge,
+                with DirectStorage safety detection, idle-aware scheduling, live per-game metrics, and launcher discovery
+                across Steam, Epic, GOG, Xbox, Ubisoft, EA, and Battle.net.</p>
+            <div class="project-links">
+                <a href="https://g1mliii.github.io/compact-games/" target="_blank" rel="noopener noreferrer">WEBSITE</a>
+                <a href="https://github.com/g1mliii/compact-games" target="_blank" rel="noopener noreferrer">CODE</a>
+            </div>
             <div class="tech-tags">
                 <span class="tech-tag">FLUTTER</span>
                 <span class="tech-tag">RUST</span>
@@ -141,26 +166,25 @@
 
         <div class="project">
             <div class="project-header">
-                <span class="project-title">ANCHORED (URL-NOTES)</span>
-                <span class="date"> Note taking </span>
+                <span class="project-title">ANCHORED</span>
+                <span class="date">CHROME EXT + WEB</span>
             </div>
-            <ul>
-                <li>Implemented a web-based companion platform to extend browser extension functionalities using
-                    JavaScript, React, and cloud technologies, enabling real-time note synchronization and user account
-                    management</li>
-                <li>Optimized backend scalability by leveraging Supabase and serverless cloud functions, reducing server
-                    costs by 30% while supporting concurrent device connections</li>
-                <li>Designed and deployed authentication workflows utilizing JavaScript and Node.js, ensuring secure
-                    access protocol implementation</li>
-                <li>Engineered a scalable, cloud-native backend that achieved 99.9% uptime and robust data integrity
-                    across multiple platforms</li>
-            </ul>
+            <p>Browser extension and web platform with 1,000+ active users. Creates, syncs, and organizes notes tied to
+                specific URLs across devices. Includes AES-256 client-side encryption, Supabase row level security,
+                Stripe subscriptions, AI-powered page summarization, CSV/JSON export, Chrome extension delivery, and PWA
+                offline support.</p>
+            <div class="project-links">
+                <a href="https://anchored.site/" target="_blank" rel="noopener noreferrer">WEBSITE</a>
+                <a href="https://chromewebstore.google.com/detail/anchored-%E2%80%93-notes-highligh/llkmfidpbpfgdgjlohgpomdjckcfkllg"
+                    target="_blank" rel="noopener noreferrer">STORE</a>
+                <a href="https://github.com/g1mliii/URL-Notes" target="_blank" rel="noopener noreferrer">CODE</a>
+            </div>
             <div class="tech-tags">
-                <span class="tech-tag">JAVASCRIPT</span>
-                <span class="tech-tag">REACT</span>
-                <span class="tech-tag">NODE.JS</span>
-                <span class="tech-tag">SUPABASE</span>
+                <span class="tech-tag">TYPESCRIPT</span>
                 <span class="tech-tag">CHROME API</span>
+                <span class="tech-tag">SUPABASE</span>
+                <span class="tech-tag">STRIPE</span>
+                <span class="tech-tag">AES-256</span>
                 <span class="tech-tag">PWA</span>
             </div>
         </div>
@@ -168,66 +192,85 @@
         <div class="project">
             <div class="project-header">
                 <span class="project-title">GHOSTCOPY</span>
+                <span class="date">DESKTOP & MOBILE</span>
             </div>
-            <p>Invisible desktop utility for cross-platform clipboard sync. Supports Windows, macOS, iOS, and Android.
-                Features Game Mode, Smart Transformers for JSON/JWT, global hotkeys, and Zero-CPU sleep mode. Real-time
-                synchronization via Supabase.</p>
+            <p>Real-time cross-platform clipboard sync for Windows, macOS, iOS, and Android. Desktop app includes a
+                system tray utility, global hotkey, and Spotlight-style send window. Mobile uses push notifications that
+                auto-copy incoming clips. Built with Supabase Realtime, row level security, zero-CPU sleep mode, and smart
+                transformers for JSON, JWT tokens, and hex colors.</p>
+            <div class="project-links">
+                <a href="https://github.com/g1mliii/Ghostcopy" target="_blank" rel="noopener noreferrer">CODE</a>
+            </div>
             <div class="tech-tags">
                 <span class="tech-tag">FLUTTER</span>
                 <span class="tech-tag">DART</span>
                 <span class="tech-tag">SUPABASE</span>
-                <span class="tech-tag">POSTGRESQL</span>
-                <span class="tech-tag">REALTIME</span>
+                <span class="tech-tag">SWIFT</span>
+                <span class="tech-tag">KOTLIN</span>
             </div>
         </div>
 
         <div class="project">
             <div class="project-header">
-                <span class="project-title">IMAGE MATCH (CATALOGMATCH)</span>
+                <span class="project-title">ANYDASH</span>
+                <span class="date">DESKTOP APP</span>
             </div>
-            <p>Visual product comparison tool for inventory management using OpenCV and NumPy for advanced image
-                analysis (color, shape, texture). Features batch processing, CSV import/export, and local SQLite
-                database with a freemium business model.</p>
+            <p>AI-powered dashboard builder. Users describe what they want to visualize in plain language, then the app
+                selects the data source, picks a chart type, and renders it. Python/FastAPI backend with Pydantic
+                validation, Claude and OpenAI provider support, role-based access controls, Tauri/Rust desktop packaging,
+                and a React 19 + TypeScript frontend.</p>
+            <div class="project-links">
+                <a href="https://github.com/g1mliii/AnyDash" target="_blank" rel="noopener noreferrer">CODE</a>
+            </div>
+            <div class="tech-tags">
+                <span class="tech-tag">REACT 19</span>
+                <span class="tech-tag">TYPESCRIPT</span>
+                <span class="tech-tag">PYTHON</span>
+                <span class="tech-tag">FASTAPI</span>
+                <span class="tech-tag">TAURI</span>
+                <span class="tech-tag">RUST</span>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-header">
+                <span class="project-title">GODOT AI IDE</span>
+                <span class="date">GODOT PLUGIN</span>
+            </div>
+            <p>AI coding assistant integrated directly into the Godot engine. Includes a VS Code-style interface,
+                Cmd+K quick edit, inline completions, and context-aware prompt pipelines that inject active scene data
+                into LLM requests. Streaming FastAPI backend with Ollama local inference plus Claude and OpenAI support.</p>
+            <div class="project-links">
+                <a href="https://github.com/g1mliii/godotaiide" target="_blank" rel="noopener noreferrer">CODE</a>
+            </div>
+            <div class="tech-tags">
+                <span class="tech-tag">PYTHON</span>
+                <span class="tech-tag">FASTAPI</span>
+                <span class="tech-tag">GDSCRIPT</span>
+                <span class="tech-tag">OLLAMA</span>
+                <span class="tech-tag">CLAUDE API</span>
+                <span class="tech-tag">OPENAI API</span>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-header">
+                <span class="project-title">IMAGE MATCH</span>
+                <span class="date">WEB APP</span>
+            </div>
+            <p>Visual product comparison pipeline for large catalogs and offline inventory workflows. Multi-threaded
+                batch ingestion cuts indexing time by 40%. Uses OpenCV and NumPy for color, shape, and texture analysis,
+                duplicate-prevention reconciliation, CSV import/export, and a local SQLite store.</p>
+            <div class="project-links">
+                <a href="https://g1mliii.github.io/image-match/" target="_blank" rel="noopener noreferrer">WEBSITE</a>
+                <a href="https://github.com/g1mliii/image-match" target="_blank" rel="noopener noreferrer">CODE</a>
+            </div>
             <div class="tech-tags">
                 <span class="tech-tag">PYTHON</span>
                 <span class="tech-tag">FLASK</span>
                 <span class="tech-tag">OPENCV</span>
                 <span class="tech-tag">NUMPY</span>
                 <span class="tech-tag">SQLITE</span>
-            </div>
-        </div>
-
-        <div class="project">
-            <div class="project-header">
-                <span class="project-title">GODOT AI IDE (GODOT-AI-CODE)</span>
-            </div>
-            <p>AI-powered coding assistant integrated directly into Godot. Features Cmd+K quick edit, inline
-                completions,
-                and a VS Code-style Git panel. Supports Ollama for local LLMs and connects to Claude/OpenAI.</p>
-            <div class="tech-tags">
-                <span class="tech-tag">GODOT</span>
-                <span class="tech-tag">PYTHON</span>
-                <span class="tech-tag">FASTAPI</span>
-                <span class="tech-tag">GDSCRIPT</span>
-                <span class="tech-tag">OLLAMA</span>
-                <span class="tech-tag">AI/LLM</span>
-            </div>
-        </div>
-
-        <div class="project">
-            <div class="project-header">
-                <span class="project-title">CROSSTECHCONNECT</span>
-            </div>
-            <p>Device compatibility platform with AI-assisted data population. Full-stack application featuring Next.js
-                14 frontend, Node.js/Fastify backend, PostgreSQL database, and Python microservices for AI processing
-                using Ollama/OpenAI.</p>
-            <div class="tech-tags">
-                <span class="tech-tag">NEXT.JS</span>
-                <span class="tech-tag">TYPESCRIPT</span>
-                <span class="tech-tag">NODE.JS</span>
-                <span class="tech-tag">POSTGRESQL</span>
-                <span class="tech-tag">PYTHON</span>
-                <span class="tech-tag">AI/ML</span>
             </div>
         </div>
     </div>
@@ -242,35 +285,42 @@
             <div class="skill-item">RUST</div>
             <div class="skill-item">SQL</div>
             <div class="skill-item">GDSCRIPT</div>
-            <div class="skill-item">GODOT</div>
             <div class="skill-item">NODE.JS</div>
             <div class="skill-item">NEXT.JS</div>
             <div class="skill-item">REACT</div>
+            <div class="skill-item">REACT 19</div>
             <div class="skill-item">FASTAPI</div>
             <div class="skill-item">FLASK</div>
             <div class="skill-item">FLUTTER</div>
+            <div class="skill-item">TAURI</div>
             <div class="skill-item">SUPABASE</div>
             <div class="skill-item">POSTGRESQL</div>
             <div class="skill-item">SQLITE</div>
             <div class="skill-item">CHROME API</div>
-            <div class="skill-item">EDGE FUNCTIONS</div>
             <div class="skill-item">PWA</div>
             <div class="skill-item">IOS</div>
             <div class="skill-item">ANDROID</div>
             <div class="skill-item">MACOS</div>
             <div class="skill-item">WINDOWS</div>
             <div class="skill-item">FLUTTER_RUST_BRIDGE</div>
-            <div class="skill-item">STRIPE</div>
+            <div class="skill-item">CLOUDFLARE</div>
+            <div class="skill-item">STRIPE CONNECT</div>
             <div class="skill-item">NTFS</div>
-            <div class="skill-item">REALTIME SYNC</div>
+            <div class="skill-item">PLAYWRIGHT</div>
+            <div class="skill-item">VITEST</div>
+            <div class="skill-item">ZOD</div>
+            <div class="skill-item">SENTRY</div>
+            <div class="skill-item">PYDANTIC</div>
             <div class="skill-item">OPENCV</div>
             <div class="skill-item">NUMPY</div>
             <div class="skill-item">LLMS</div>
+            <div class="skill-item">CLAUDE API</div>
             <div class="skill-item">OLLAMA</div>
             <div class="skill-item">OPENAI API</div>
             <div class="skill-item">NLP</div>
             <div class="skill-item">GIT/GITHUB</div>
-            <div class="skill-item">REST APIs</div>
+            <div class="skill-item">DOCKER</div>
+            <div class="skill-item">GITHUB ACTIONS</div>
         </div>
     </div>
 

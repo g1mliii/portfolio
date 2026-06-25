@@ -52,20 +52,20 @@
             <div class="section-header">
                 <h2>// ABOUT ME</h2>
             </div>
-            <p>I AM A SOFTWARE ENGINEER WHO BUILDS TOOLS THAT SOLVE REAL PROBLEMS. WITH 1,000+ ACTIVE USERS ON
-                ANCHORED, I FOCUS ON CREATING APPLICATIONS THAT PEOPLE ACTUALLY USE
-                AND RELY ON DAILY.</p>
+            <p>I AM A FULL-STACK DEVELOPER AND AI SYSTEMS BUILDER WHO SHIPS THINGS PEOPLE ACTUALLY USE. ANCHORED HAS
+                1,000+ ACTIVE USERS. COMPACT GAMES IS A FULLY RELEASED WINDOWS UTILITY WITH 13 VERSIONS SHIPPED.
+                APTBAZAAR IS A QR-STOREFRONT PLATFORM FOR LOCAL SELLERS WITH REAL STRIPE CONNECT PAYMENTS.</p>
             <br>
-            <p>MY APPROACH TO PROBLEM-SOLVING: START WITH USER NEEDS, BUILD THE SIMPLEST SOLUTION THAT WORKS, THEN
-                ITERATE BASED ON REAL FEEDBACK. I BELIEVE IN SHIPPING FAST, LEARNING FROM PRODUCTION, AND CONTINUOUSLY
-                IMPROVING.</p>
+            <p>MY APPROACH: START WITH USER NEEDS, BUILD THE SIMPLEST SOLUTION THAT WORKS, THEN ITERATE BASED ON REAL
+                FEEDBACK. SHIP FAST, LEARN FROM PRODUCTION, KEEP IMPROVING.</p>
             <br>
-            <p>I'M PASSIONATE ABOUT BUILDING FULL-STACK SYSTEMS AND CROSS-PLATFORM APPS WITH RUST + FLUTTER ACROSS
-                MACOS, WINDOWS, IOS, AND ANDROID. I LOVE THE CHALLENGE OF MAKING COMPLEX SYSTEMS FEEL SIMPLE AND
-                INTUITIVE TO USERS.</p>
+            <p>I BUILD ACROSS THE FULL STACK — NEXT.JS AND REACT ON THE FRONTEND, FASTAPI AND NODE.JS ON THE BACKEND,
+                FLUTTER + RUST FOR NATIVE DESKTOP AND MOBILE APPS ACROSS WINDOWS, MACOS, IOS, AND ANDROID. ON THE AI
+                SIDE I BUILD LLM PIPELINES, AGENTIC TOOLS, AND MULTI-PROVIDER INTEGRATIONS WITH CLAUDE, OPENAI, AND
+                OLLAMA.</p>
             <br>
-            <p>CURRENT FOCUS: MOBILE + DESKTOP CROSS-PLATFORM APPS, AI-POWERED DEVELOPER TOOLS, AND PRIVACY-FIRST
-                SOFTWARE.</p>
+            <p>CURRENT FOCUS: APTBAZAAR (QR MARKETPLACE), GHOSTCOPY (CROSS-PLATFORM CLIPBOARD SYNC), AND ANYDASH
+                (AI-POWERED DASHBOARD BUILDER).</p>
 
 
         </section>
@@ -75,24 +75,51 @@
                 <h2>// FEATURED PROJECTS</h2>
             </div>
             <div class="projects-grid">
-                <!-- Project 1: Compact Games -->
+                <!-- Project 1: AptBazaar -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">APTBAZAAR</h3>
+                        <span class="badge">WEB APP</span>
+                    </div>
+                    <p class="project-description">
+                        QR-STOREFRONT PLATFORM FOR LOCAL SELLERS. HOME BAKERS, TUTORS, AND CAMPUS CREATORS CAN STAND UP
+                        A LIVE CHECKOUT PAGE IN MINUTES, GENERATE A QR CODE, AND TAKE ORDERS WITH STRIPE CONNECT
+                        EXPRESS SPLIT PAYMENTS. SUPABASE POSTGRESQL WITH ROW LEVEL SECURITY, CLOUDFLARE PAGES FOR EDGE
+                        DEPLOYMENT, VITEST + PLAYWRIGHT FOR FULL TEST COVERAGE, AND SENTRY FOR PRODUCTION OBSERVABILITY.
+                    </p>
+                    <div class="project-tech">
+                        <span>NEXT.JS</span>
+                        <span>TYPESCRIPT</span>
+                        <span>SUPABASE</span>
+                        <span>STRIPE CONNECT</span>
+                        <span>CLOUDFLARE</span>
+                        <span>PLAYWRIGHT</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/g1mliii/aptbazaar" target="_blank"
+                            rel="noopener noreferrer">CODE</a>
+                    </div>
+                </article>
+
+                <!-- Project 2: Compact Games -->
                 <article class="project-card">
                     <div class="project-header">
                         <h3 class="project-title">COMPACT GAMES</h3>
                         <span class="badge">DESKTOP APP + WEB</span>
                     </div>
                     <p class="project-description">
-                        WINDOWS GAME STORAGE OPTIMIZER THAT AUTOMATICALLY COMPRESSES INSTALLED GAMES WHEN THE SYSTEM
-                        IS IDLE. BUILT WITH A FLUTTER FRONTEND AND RUST BACKEND USING FLUTTER_RUST_BRIDGE FOR
-                        TYPE-SAFE INTEROP. INCLUDES DIRECTSTORAGE SAFETY CHECKS, GAME PLATFORM DISCOVERY, AND
-                        REAL-TIME COMPRESSION METRICS.
+                        WINDOWS GAME STORAGE OPTIMIZER — 13 RELEASES SHIPPED. RECLAIMS DISK SPACE FROM LARGE GAME
+                        LIBRARIES USING NTFS COMPRESSION WITHOUT DELETING FILES. FLUTTER FRONTEND + RUST BACKEND VIA
+                        FLUTTER_RUST_BRIDGE FOR TYPE-SAFE INTEROP. DIRECTSTORAGE SAFETY DETECTION, IDLE-AWARE
+                        SCHEDULING, LIVE PER-GAME COMPRESSION METRICS, AND AUTO-DISCOVERY ACROSS STEAM, EPIC, GOG, XBOX,
+                        UBISOFT, EA, AND BATTLE.NET.
                     </p>
                     <div class="project-tech">
                         <span>FLUTTER</span>
                         <span>RUST</span>
+                        <span>FLUTTER_RUST_BRIDGE</span>
                         <span>WINDOWS</span>
                         <span>NTFS</span>
-                        <span>FLUTTER_RUST_BRIDGE</span>
                     </div>
                     <div class="project-links">
                         <a href="https://g1mliii.github.io/compact-games/" target="_blank"
@@ -102,23 +129,25 @@
                     </div>
                 </article>
 
-                <!-- Project 2: Anchored -->
+                <!-- Project 3: Anchored -->
                 <article class="project-card">
                     <div class="project-header">
-                        <h3 class="project-title">ANCHORED (URL-NOTES)</h3>
+                        <h3 class="project-title">ANCHORED</h3>
                         <span class="badge">CHROME EXT + WEB</span>
                     </div>
                     <p class="project-description">
-                        SMART NOTE-TAKING PLATFORM. CHROME EXTENSION + PWA WEB APP WITH
-                        REAL-TIME SYNC, AI-ASSISTED ORGANIZATION, AND STRIPE PAYMENT INTEGRATION. MANIFEST V3
-                        ARCHITECTURE WITH SERVICE WORKERS AND INDEXEDDB FOR OFFLINE CAPABILITY.
+                        BROWSER EXTENSION AND WEB PLATFORM WITH 1,000+ ACTIVE USERS. CREATE, SYNC, AND ORGANIZE NOTES
+                        TIED TO SPECIFIC URLS ACROSS ALL DEVICES. AES-256 CLIENT-SIDE ENCRYPTION, SUPABASE ROW LEVEL
+                        SECURITY FOR MULTI-TENANT DATA ISOLATION, STRIPE SUBSCRIPTION PAYMENTS, AI-POWERED PAGE
+                        SUMMARIZATION, AND CSV/JSON EXPORT. SHIPS AS BOTH A CHROME EXTENSION AND A PWA WITH OFFLINE
+                        SUPPORT.
                     </p>
                     <div class="project-tech">
-                        <span>JAVASCRIPT</span>
+                        <span>TYPESCRIPT</span>
                         <span>CHROME API</span>
                         <span>SUPABASE</span>
-                        <span>TYPESCRIPT</span>
                         <span>STRIPE</span>
+                        <span>AES-256</span>
                         <span>PWA</span>
                     </div>
                     <div class="project-links">
@@ -130,23 +159,25 @@
                     </div>
                 </article>
 
-                <!-- Project 3: GhostCopy -->
+                <!-- Project 4: GhostCopy -->
                 <article class="project-card">
                     <div class="project-header">
                         <h3 class="project-title">GHOSTCOPY</h3>
                         <span class="badge">DESKTOP & MOBILE</span>
                     </div>
                     <p class="project-description">
-                        INVISIBLE DESKTOP UTILITY FOR CROSS-PLATFORM CLIPBOARD SYNC. SUPPORTS WINDOWS, MACOS, IOS, AND
-                        ANDROID. FEATURES GAME MODE, SMART TRANSFORMERS FOR JSON/JWT, ZERO-CPU SLEEP MODE, AND REAL-TIME
-                        SYNCHRONIZATION VIA SUPABASE.
+                        REAL-TIME CROSS-PLATFORM CLIPBOARD SYNC — COPY ON ONE DEVICE, INSTANTLY PASTE ON ANOTHER.
+                        NATIVE APPS FOR WINDOWS, MACOS, IOS, AND ANDROID. DESKTOP: SYSTEM TRAY UTILITY WITH GLOBAL
+                        HOTKEY AND SPOTLIGHT-STYLE SEND WINDOW. MOBILE: PUSH NOTIFICATIONS THAT AUTO-COPY INCOMING
+                        CLIPS. SUPABASE REALTIME FOR SUB-SECOND SYNC, ROW LEVEL SECURITY, ZERO-CPU SLEEP MODE. SMART
+                        TRANSFORMERS FOR JSON, JWT TOKENS, AND HEX COLORS.
                     </p>
                     <div class="project-tech">
                         <span>FLUTTER</span>
                         <span>DART</span>
                         <span>SUPABASE</span>
-                        <span>POSTGRESQL</span>
-                        <span>REALTIME</span>
+                        <span>SWIFT</span>
+                        <span>KOTLIN</span>
                     </div>
                     <div class="project-links">
                         <a href="https://github.com/g1mliii/Ghostcopy" target="_blank"
@@ -154,51 +185,51 @@
                     </div>
                 </article>
 
-                <!-- Project 4: Image Match -->
+                <!-- Project 5: AnyDash -->
                 <article class="project-card">
                     <div class="project-header">
-                        <h3 class="project-title">IMAGE MATCH</h3>
-                        <span class="badge">WEB APP</span>
+                        <h3 class="project-title">ANYDASH</h3>
+                        <span class="badge">DESKTOP APP</span>
                     </div>
                     <p class="project-description">
-                        VISUAL PRODUCT COMPARISON TOOL FOR INVENTORY MANAGEMENT. DESKTOP APP USING OPENCV, NUMPY FOR
-                        IMAGE ANALYSIS (COLOR, SHAPE, TEXTURE). FEATURES BATCH PROCESSING, CSV IMPORT/EXPORT, LOCAL
-                        SQLITE DATABASE. FREEMIUM MODEL.
+                        AI-POWERED DASHBOARD BUILDER — DESCRIBE WHAT YOU WANT TO VISUALIZE IN PLAIN LANGUAGE AND THE
+                        APP SELECTS THE DATA SOURCE, PICKS THE CHART TYPE, AND RENDERS IT. PYTHON/FASTAPI BACKEND WITH
+                        PYDANTIC VALIDATION, MULTI-PROVIDER AI SUPPORT (CLAUDE, OPENAI), ROLE-BASED ACCESS CONTROLS.
+                        PACKAGED AS A NATIVE DESKTOP APP USING TAURI (RUST) WITH A REACT 19 + TYPESCRIPT FRONTEND.
                     </p>
                     <div class="project-tech">
+                        <span>REACT 19</span>
+                        <span>TYPESCRIPT</span>
                         <span>PYTHON</span>
-                        <span>FLASK</span>
-                        <span>OPENCV</span>
-                        <span>NUMPY</span>
-                        <span>SQLITE</span>
-                        <span>TAILWIND</span>
+                        <span>FASTAPI</span>
+                        <span>TAURI</span>
+                        <span>RUST</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://g1mliii.github.io/image-match/" target="_blank"
-                            rel="noopener noreferrer">WEBSITE</a>
-                        <a href="https://github.com/g1mliii/image-match" target="_blank"
+                        <a href="https://github.com/g1mliii/AnyDash" target="_blank"
                             rel="noopener noreferrer">CODE</a>
                     </div>
                 </article>
 
-                <!-- Project 5: Godot AI IDE -->
+                <!-- Project 6: Godot AI IDE -->
                 <article class="project-card">
                     <div class="project-header">
-                        <h3 class="project-title">GODOT AI IDE (GODOT-AI-CODE)</h3>
+                        <h3 class="project-title">GODOT AI IDE</h3>
                         <span class="badge">GODOT PLUGIN</span>
                     </div>
                     <p class="project-description">
-                        AI-POWERED CODING ASSISTANT INTEGRATED DIRECTLY INTO GODOT. FEATURES CMD+K QUICK EDIT, INLINE
-                        COMPLETIONS, AND A VS CODE-STYLE GIT PANEL. SUPPORTS OLLAMA FOR LOCAL LLMS AND CONNECTS TO
-                        CLAUDE/OPENAI.
+                        AI CODING ASSISTANT INTEGRATED DIRECTLY INTO THE GODOT ENGINE. VS CODE-STYLE INTERFACE WITH
+                        CMD+K QUICK EDIT, INLINE COMPLETIONS, AND CONTEXT-AWARE PROMPT PIPELINES THAT INJECT ACTIVE
+                        GAME SCENE DATA INTO LLM REQUESTS. STREAMING FASTAPI BACKEND. SUPPORTS OLLAMA FOR FULLY LOCAL
+                        INFERENCE ALONGSIDE CLAUDE AND OPENAI.
                     </p>
                     <div class="project-tech">
-                        <span>GODOT</span>
                         <span>PYTHON</span>
                         <span>FASTAPI</span>
                         <span>GDSCRIPT</span>
                         <span>OLLAMA</span>
-                        <span>AI/LLM</span>
+                        <span>CLAUDE API</span>
+                        <span>OPENAI API</span>
                     </div>
                     <div class="project-links">
                         <a href="https://github.com/g1mliii/godotaiide" target="_blank"
@@ -206,51 +237,29 @@
                     </div>
                 </article>
 
-                <!-- Project 6: CrossTechConnect -->
+                <!-- Project 7: Image Match -->
                 <article class="project-card">
                     <div class="project-header">
-                        <h3 class="project-title">CROSSTECHCONNECT</h3>
-                        <span class="badge">GITHUB PROJECT</span>
+                        <h3 class="project-title">IMAGE MATCH</h3>
+                        <span class="badge">WEB APP</span>
                     </div>
                     <p class="project-description">
-                        DEVICE COMPATIBILITY PLATFORM WITH AI-ASSISTED DATA POPULATION. FULL-STACK APPLICATION WITH
-                        NEXT.JS 14 FRONTEND, NODE.JS/FASTIFY BACKEND, POSTGRESQL DATABASE. PYTHON MICROSERVICE FOR AI
-                        PROCESSING USING OLLAMA/OPENAI. CROWDSOURCED VERIFICATION SYSTEM.
+                        VISUAL PRODUCT COMPARISON PIPELINE FOR LARGE CATALOGS — BUILT FOR LOW AND HIGH-END HARDWARE.
+                        MULTI-THREADED BATCH INGESTION CUTS INDEXING TIME BY 40%. OPENCV + NUMPY FOR COLOR, SHAPE, AND
+                        TEXTURE ANALYSIS. DUPLICATE-PREVENTION RECONCILIATION, CSV IMPORT/EXPORT, LOCAL SQLITE STORE,
+                        FULLY OFFLINE WITH NO EXTERNAL API DEPENDENCIES.
                     </p>
                     <div class="project-tech">
-                        <span>NEXT.JS</span>
-                        <span>TYPESCRIPT</span>
-                        <span>NODE.JS</span>
-                        <span>POSTGRESQL</span>
                         <span>PYTHON</span>
-                        <span>AI/ML</span>
+                        <span>FLASK</span>
+                        <span>OPENCV</span>
+                        <span>NUMPY</span>
+                        <span>SQLITE</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://github.com/g1mliii/CrossTechConnect" target="_blank"
-                            rel="noopener noreferrer">CODE</a>
-                    </div>
-                </article>
-
-                <!-- Project 7: URL Rating Extension -->
-                <article class="project-card">
-                    <div class="project-header">
-                        <h3 class="project-title">URL RATING EXTENSION</h3>
-                        <span class="badge">CHROME EXT</span>
-                    </div>
-                    <p class="project-description">
-                        PRODUCTION-READY CHROME EXTENSION FOR URL TRUST SCORING. MULTI-FACTOR ALGORITHM COMBINING
-                        DOMAIN ANALYSIS (SSL, DOMAIN AGE, THREAT DATABASES) AND COMMUNITY RATINGS. UNIFIED API
-                        ARCHITECTURE WITH AUTOMATED CRON PROCESSING, JWT AUTHENTICATION, AND SMART CACHING.
-                    </p>
-                    <div class="project-tech">
-                        <span>JAVASCRIPT</span>
-                        <span>CHROME API</span>
-                        <span>SUPABASE</span>
-                        <span>POSTGRESQL</span>
-                        <span>EDGE FUNCTIONS</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/g1mliii/URL-Rating-Extension" target="_blank"
+                        <a href="https://g1mliii.github.io/image-match/" target="_blank"
+                            rel="noopener noreferrer">WEBSITE</a>
+                        <a href="https://github.com/g1mliii/image-match" target="_blank"
                             rel="noopener noreferrer">CODE</a>
                     </div>
                 </article>
@@ -298,13 +307,14 @@
             <div class="skills-category">
                 <h3>AI & DATA</h3>
                 <div class="skills-grid">
-                    <div class="skill-item">LLMS</div>
-                    <div class="skill-item">OLLAMA</div>
+                    <div class="skill-item">CLAUDE API</div>
                     <div class="skill-item">OPENAI API</div>
+                    <div class="skill-item">OLLAMA</div>
+                    <div class="skill-item">LLMS</div>
                     <div class="skill-item">NLP</div>
                     <div class="skill-item">OPENCV</div>
                     <div class="skill-item">NUMPY</div>
-                    <div class="skill-item">REALTIME SYNC</div>
+                    <div class="skill-item">PYDANTIC</div>
                 </div>
             </div>
 
@@ -312,12 +322,17 @@
                 <h3>TOOLS & INFRA</h3>
                 <div class="skills-grid">
                     <div class="skill-item">GIT & GITHUB</div>
+                    <div class="skill-item">DOCKER</div>
+                    <div class="skill-item">GITHUB ACTIONS</div>
+                    <div class="skill-item">CLOUDFLARE</div>
+                    <div class="skill-item">STRIPE CONNECT</div>
+                    <div class="skill-item">PLAYWRIGHT</div>
+                    <div class="skill-item">VITEST</div>
+                    <div class="skill-item">ZOD</div>
                     <div class="skill-item">FLUTTER_RUST_BRIDGE</div>
-                    <div class="skill-item">STRIPE</div>
-                    <div class="skill-item">EDGE FUNCTIONS</div>
-                    <div class="skill-item">SQLITE</div>
-                    <div class="skill-item">NTFS</div>
+                    <div class="skill-item">SENTRY</div>
                     <div class="skill-item">JENKINS</div>
+                    <div class="skill-item">SQLITE</div>
                 </div>
             </div>
         </section>
@@ -332,7 +347,7 @@
                 <a href="https://www.linkedin.com/in/subaig/" target="_blank" rel="noopener noreferrer"
                     title="LINKEDIN" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
             </div>
-            <p class="copyright">&copy; 2025 SUBAIG SURI. ALL RIGHTS RESERVED.</p>
+            <p class="copyright">&copy; 2026 SUBAIG SURI. ALL RIGHTS RESERVED.</p>
         </footer>
     </div>
     <script src="script.js"></script>

@@ -122,6 +122,22 @@ h2 {
     margin-bottom: 8px;
 }
 
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.project-links a {
+    color: #000;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 2px solid #000;
+}
+
 .tech-tags {
     display: flex;
     flex-wrap: wrap;
