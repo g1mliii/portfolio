@@ -268,11 +268,6 @@ header {
     align-self: start;
 }
 
-.project-media-compact {
-    aspect-ratio: 576 / 460;
-    align-self: start;
-}
-
 .project-media-portrait {
     aspect-ratio: 491 / 747;
     width: 100%;
